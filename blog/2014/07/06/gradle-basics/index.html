@@ -1,26 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[selience]]></title>
-  <link href="http://selience.github.io/atom.xml" rel="self"/>
-  <link href="http://selience.github.io/"/>
-  <updated>2014-07-06T11:53:04+08:00</updated>
-  <id>http://selience.github.io/</id>
-  <author>
-    <name><![CDATA[selience]]></name>
-    <email><![CDATA[loveselience@gmail.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gradle Basics - selience</title>
+	<meta name="author" content="selience">
 
-  
-  <entry>
-    <title type="html"><![CDATA[Gradle Basics]]></title>
-    <link href="http://selience.github.io/blog/2014/07/06/gradle-basics/"/>
-    <updated>2014-07-06T11:10:35+08:00</updated>
-    <id>http://selience.github.io/blog/2014/07/06/gradle-basics</id>
-    <content type="html"><![CDATA[<p>自Android Studio发布以来，我逐步的将工作空间从Eclipse迁移过来，对于老伙伴Eclipse也越来越嫌弃。也难怪，Eclipse运行效率和体验一直为广大码农所诟病，连基本的列表滚动都不够平滑，而Android Studio在各方面都达到了优秀，极具科技感的ui也牢牢地抓住了广大Android码农的心。</p>
+	
+	<meta name="description" content="Gradle Basics 自Android Studio发布以来，我逐步的将工作空间从Eclipse迁移过来，对于老伙伴Eclipse也越来越嫌弃。也难怪，Eclipse运行效率和体验一直为广大码农所诟病，连基本的列表滚动都不够平滑，而Android Studio在各方面都达到了优秀， &hellip;">
+	
 
-<p><img src="http://selience.github.io/media/2014-07-06-gradle-basics/android-studio.png" alt="" /></p>
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="selience" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://selience.github.io/blog/2014/07/06/gradle-basics/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+	  $(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("loveselience@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">selience</a></h1>
+</hgroup>
+
+<p class="subtitle">勿忘初心，方得始终。</p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/project">Project</a></li>
+  <li><a href="/about-me">About me</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		<a class="weibo" href="http://www.weibo.com/selience" title="Weibo">Weibo</a>
+		
+		
+		
+		
+		
+		<a class="github" href="https://github.com/selience" title="GitHub">GitHub</a>
+		
+		
+		<a class="dribbble" href="http://www.dribbble.com/selience" title="Dribbble">Dribbble</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Gradle Basics</h1>
+	<div class="entry-content" itemprop="articleBody"><p>自Android Studio发布以来，我逐步的将工作空间从Eclipse迁移过来，对于老伙伴Eclipse也越来越嫌弃。也难怪，Eclipse运行效率和体验一直为广大码农所诟病，连基本的列表滚动都不够平滑，而Android Studio在各方面都达到了优秀，极具科技感的ui也牢牢地抓住了广大Android码农的心。</p>
+
+<p><img src="/media/2014-07-06-gradle-basics/android-studio.png" alt="" /></p>
 
 <!--more-->
 
@@ -355,7 +424,72 @@
 <h4>Reference</h4>
 
 <p><a href="http://tools.android.com/tech-docs/new-build-system/user-guide">Gradle Plugin User Guide</a></p>
-]]></content>
-  </entry>
-  
-</feed>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+	
+	<a class="addthis_button_sinaweibo"></a>
+	
+	
+	<a class="addthis_button_facebook"></a>
+	
+	
+	
+	
+	<a class="addthis_button_compact"></a>
+	<a class="addthis_counter addthis_bubble_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2014 - selience -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+</footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'selience';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://selience.github.io/blog/2014/07/06/gradle-basics/';
+        var disqus_url = 'http://selience.github.io/blog/2014/07/06/gradle-basics/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
